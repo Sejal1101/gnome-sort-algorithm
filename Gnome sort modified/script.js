@@ -134,3 +134,15 @@ document.getElementById("Button1").style.backgroundColor = "#d8b6ff";
 document.getElementById("Button2").disabled = true;
 document.getElementById("Button2").style.backgroundColor = "#d8b6ff";
 }
+
+$(".btn1").css('background-color','green');
+$(".btn2").css('background-color','red');
+
+$(document).ready(function(){
+	$(".btn1").toggle(
+	function(){$(".btn1").css({"color": "yellow"});},
+		
+	function(){$(".btn2").css({"color": "green"});
+	});
+});
+	
